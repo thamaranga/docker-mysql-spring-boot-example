@@ -13,7 +13,7 @@ services:
       - "8083:8080"
     environment:
       SPRING_APPLICATION_JSON: '{
-            "spring.datasource.url"  : "jdbc:mysql://mysql-standalone:3306/test?useSSL=false",
+            "spring.datasource.url"  : "jdbc:mysql://mysql-standalone:3306/test?autoReconnect=true&useSSL=false",
             "spring.datasource.username" : "root",
             "spring.datasource.password" : "root123",
             "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
